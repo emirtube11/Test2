@@ -105,7 +105,7 @@ local function Shoot()
 
     local raycastResult = Workspace:Raycast(Origin, Direction, Params)
 
-    local Minimum, Max = raycastResult.Position.Y + 2, raycastResult.Position.Y + 8
+    local Minimum, Max = raycastResult.Position.Y + 2, raycastResult.Position.Y + 6
 
     local aimPos = CFrame.new(Vector3.new(hrp.Position.X, math.clamp(hrp.Position.Y, Minimum, Max), hrp.Position.Z)) + predicted
 
@@ -186,3 +186,5 @@ Connection = Player.Chatted:Connect(function(Msg)
         return
     end
 end)
+
+print("Version 1")
