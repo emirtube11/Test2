@@ -187,4 +187,4 @@ Connection = Player.Chatted:Connect(function(Msg)
     end
 end)
 
-print("Version 1")
+print("Version 1.0.0")
